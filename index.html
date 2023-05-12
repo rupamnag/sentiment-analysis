@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sentiment Analyser ANI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sentiment Analysis</h1>
+    </header>
+    <main>
+      <form>
+        <label for="text">Enter text:</label>
+        <textarea id="text" name="text"></textarea> <br />
+        <button id="analyze-btn">Analyze</button>
+      </form>
+      <div id="result" style="display: none">
+        <h2>Result</h2>
+        <p><strong>Text:</strong> <span id="result-text"></span></p>
+        <p><strong>Sentiment:</strong> <span id="result-sentiment"></span></p>
+        <p><strong>Polarity:</strong> <span id="result-polarity"></span></p>
+        <p>
+          <strong>Subjectivity:</strong> <span id="result-subjectivity"></span>
+        </p>
+      </div>
+    </div>
+    <div class="chart" id="chart">
+      <h2>Full Form of Sentiments</h2>
+      <ul class="chart__list">
+        <li class="chart__item">
+          <span class="chart__label">P+:</span>
+          <span class="chart__value">Strong Positive</span>
+        </li>
+        <li class="chart__item">
+          <span class="chart__label">P:</span>
+          <span class="chart__value">Positive</span>
+        </li>
+        <li class="chart__item">
+          <span class="chart__label">NEU:</span>
+          <span class="chart__value">Neutral</span>
+        </li>
+        <li class="chart__item">
+          <span class="chart__label">N:</span>
+          <span class="chart__value">Negative</span>
+        </li>
+        <li class="chart__item">
+          <span class="chart__label">N+:</span>
+          <span class="chart__value">Strong Negative</span>
+        </li>
+        <li class="chart__item">
+          <span class="chart__label">NONE:</span>
+          <span class="chart__value">No Sentiment</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+    </main>
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("contextmenu", (event) =>
+        event.preventDefault()
+      );
+    </script>
+    <footer>
+      <div class="container">
+        <p>Developed by Rupam Nag | <a href="https://www.linkedin.com/in/rupamnag/"><img src="https://media.licdn.com/dms/image/D4D03AQF9HezbIFq6pA/profile-displayphoto-shrink_400_400/0/1667234427857?e=1689206400&v=beta&t=kS_ynYa8RXi-WUvK34hDnVDwvm-pnErWl9F6eYMhRkI" alt="LinkedIn Profile" class="linkedin-profile"></a></p>
+      </div>
+    </footer>
+  </body>
+</html>
